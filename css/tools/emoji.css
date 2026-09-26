@@ -1,0 +1,1 @@
+.emoji-grid-container{max-height:500px;overflow-y:auto;background-color:#fafbfc;border:1px solid var(--border-divider);border-radius:var(--radius-small);padding:var(--spacing-md)}.emoji-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:var(--spacing-sm)}@media (max-width:768px){.emoji-grid{grid-template-columns:repeat(auto-fill,minmax(40px,1fr))}}

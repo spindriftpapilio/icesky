@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08131c"/>
+      <stop offset="100%" stop-color="#10202d"/>
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eefbff"/>
+      <stop offset="100%" stop-color="#b9ecff"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9ddfff"/>
+      <stop offset="100%" stop-color="#67bff5"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8f6ff"/>
+      <stop offset="100%" stop-color="#89cff8"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="#7ad6ff" stroke-opacity=".35"/>
+  <circle cx="22" cy="17" r="8" fill="#ffffff" fill-opacity=".22"/>
+  <polygon points="32,12 48,22 32,32 16,22" fill="url(#cubeTop)"/>
+  <polygon points="16,22 32,32 32,50 16,40" fill="url(#cubeLeft)"/>
+  <polygon points="48,22 32,32 32,50 48,40" fill="url(#cubeRight)"/>
+  <polyline points="32,12 48,22 48,40 32,50 16,40 16,22 32,12" fill="none" stroke="#dff7ff" stroke-width="2" stroke-linejoin="round"/>
+  <line x1="32" y1="12" x2="32" y2="50" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="16" y1="22" x2="32" y2="32" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="22" x2="32" y2="32" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
+</svg>
