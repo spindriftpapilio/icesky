@@ -1,0 +1,1 @@
+window.TokenizerRuntime=(()=>{const e=new Map,n={cl100k:"cl100k_base",o200k:"o200k_base",p50k:"p50k_base",r50k:"r50k_base"};return{load:async function load(t){const o=n[t];if(!o)throw new Error(`Unknown tokenizer: ${t}`);return e.has(o)||e.set(o,import(`https://cdn.jsdelivr.net/npm/gpt-tokenizer@2.9.0/esm/encoding/${o}.js`).catch(n=>{throw e.delete(o),n})),e.get(o)}}})();

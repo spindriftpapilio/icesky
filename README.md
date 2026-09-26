@@ -1,41 +1,109 @@
-## 提示词注入生成器
-提示词注入生成器，提示词注入作为LLM首要威胁，是现代LLM最大的攻击威胁之一，本程序集合了常见的提示词注入prompt，覆盖了提取系统提示词，绕过内置安全过滤器的提示词
-并且自带多语言库，错别词库，语义替代库等。可进行单个payload攻击与组合攻击等，且在生成基础版的同时自带变异混淆版。
+# 冰霄 IceSky
 
-## 使用方法
-安装pyperclip库
+面向AI安全测试的提示词注入综合工具，提供文本变换、Unicode隐写、多轮对话编辑，以及图像、音频、PDF、DOCX和富文本测试样本生成。
+
+## 界面预览
+
+![IceSky 工具界面](ui.png)
+
+## 功能
+
+| 模块 | 能力 |
+| --- | --- |
+| 文本变换 | 常见编码、古典密码、Unicode字形、大小写和格式转换，支持组合变换 |
+| 解码与隐写 | 格式识别、文本解码、Emoji变体选择符隐写、不可见字符处理 |
+| 多模态样本 | 编辑和生成图像、音频、PDF、DOCX与富文本载体 |
+| 对话编辑 | 多轮消息编辑、材料与载荷组合、批量样本构造 |
+| 文本扰动 | 字符映射、文本拆分、批量变异、噪声和Token压力样本 |
+| 分析工具 | Token计数与可视化、异常Token、提示词注入分类与参考资料 |
+| AI辅助 | 翻译与提示词变体生成，可用性取决于接口、模型和账户权限 |
+
+### 部署
+
+将整个目录上传到任何静态托管服务即可：
+
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+- Vercel
+- AWS S3 + CloudFront
+- 任何支持静态文件的Web服务器
+
+**注意：** AI辅助功能（翻译、提示词变体生成）依赖 `/api/` 路由。静态托管时这些功能将不可用，除非配置额外的API后端。
+
+## 项目结构
+
 ```
-pip3 install pyperclip
+.
+├── css/                    # 样式表
+│   ├── components/         # 组件样式
+│   ├── tools/              # 工具专用样式
+│   └── vendor/             # 第三方CSS（FontAwesome）
+├── js/                     # 前端逻辑
+│   ├── app/                # 应用核心（导航、历史、命令）
+│   ├── bundles/            # 打包的转换器模块
+│   ├── config/             # 配置与元数据
+│   ├── core/               # 核心功能（解码、隐写、工具注册）
+│   ├── data/               # 数据文件（Emoji、Token、分类法）
+│   ├── tools/              # 各工具实现
+│   ├── utils/              # 工具函数
+│   └── vendor/             # 第三方库（Vue.js）
 ```
-之后使用
-```
-python3 main.py
-```
-进入命令行模式，此模式随机生成2种示例prompt且每次运行不一样
-<img width="1206" height="326" alt="image" src="https://github.com/user-attachments/assets/aba59b59-82b6-4cb5-b930-ead09cf99b21" />
-<img width="1206" height="328" alt="image" src="https://github.com/user-attachments/assets/b0f01750-2cbf-4733-bd11-82ccd59e8ce6" />
-启用图形界面
-```
-python3 main.py -gui
-```
-<img width="1502" height="886" alt="image" src="https://github.com/user-attachments/assets/93f496c7-5d97-4569-a952-3b33149350b9" />
-图形界面可自定义变异强度，默认为0.8，可单独选择基础版和组合版
-<img width="1493" height="880" alt="image" src="https://github.com/user-attachments/assets/4e35dd6d-dda9-40f5-914f-c18742571d76" />
-<img width="1502" height="921" alt="image" src="https://github.com/user-attachments/assets/bb91056c-7a46-447d-92bc-d2dfe86730d5" />
-历史记录默认生成变异版，可双击复制
-<img width="1496" height="911" alt="image" src="https://github.com/user-attachments/assets/2f05ad5f-312f-4014-a5f3-30c77690dc3f" />
 
-## 扩展阅读
-[如何获取主流大模型的系统提示词](https://xz.aliyun.com/news/18779)
+## 工具列表
 
-[大模型安全攻防实践 越狱攻击方法与思路分享](https://xz.aliyun.com/news/18770)
+本应用包含以下工具：
 
-## 时间线
-2025.9.13    开天劈地，发布初版。
+- **Transform** - 文本编码转换（Base64、Hex、Unicode等）
+- **Decode** - 自动识别和解码多种格式
+- **ASCII Smuggler** - ASCII艺术与隐藏文本
+- **Emoji** - Emoji变体选择符隐写
+- **Bijection** - 自定义字符映射学习
+- **Gibberish** - 噪声文本生成
+- **Mutation** - 批量文本变异
+- **Splitter** - 文本分割策略
+- **Tokenizer** - Token分析与可视化
+- **Tokenade** - Token压力测试
+- **Sample Builder** - 多轮对话样本构造
+- **Prompt Craft** - AI辅助提示词生成（需API）
+- **Translate** - 多语言翻译（需API）
+- **Injection Generator** - 提示词注入样本生成
+- **Prompt Injection Taxonomy** - 注入技术分类参考
+- **Jailbreak Library** - 越狱提示词库
+- **Image Inject** - 图像载体生成
+- **Audio Inject** - 音频载体生成
+- **PDF Inject** - PDF载体生成
+- **DOCX Inject** - DOCX载体生成
+- **Rich Text Inject** - 富文本载体生成
+- **Style Craft** - 文本样式转换
 
-## 联系方式
-以下是我的微信公众号二维码，不定期分享AI安全相关知识，欢迎各位师傅们关注
+## AI功能配置
 
-<img width="360" height="128" alt="image" src="https://github.com/user-attachments/assets/4a4b1b79-73bb-4349-add3-c29a8bd379be" />
+AI辅助功能（Prompt Craft、Translate）需要后端API支持。
 
+如果你有对应的API服务，需要实现以下端点：
 
+- `POST /api/openai/chat` - OpenAI兼容聊天接口
+- `POST /api/anthropic/chat` - Anthropic兼容聊天接口
+- `GET /api/openai/models` - 获取可用OpenAI模型列表
+- `GET /api/anthropic/models` - 获取可用Anthropic模型列表
+
+静态部署时这些功能将显示静态部署不支持API调用提示。
+
+## 浏览器兼容性
+
+建议使用现代浏览器：
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+
+部分功能（如DOCX生成、PDF编辑）依赖较新的Web API。
+
+## 交流群
+
+![IceSky交流群二维码](group.jpg)
+
+## 免责声明
+
+本工具仅供安全研究与教育用途。使用者应遵守相关法律法规和道德规范，对使用本工具产生的一切后果自行负责。

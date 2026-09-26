@@ -1,0 +1,1 @@
+window.ThemeUtils={initializeTheme:()=>(document.body.classList.remove("dark-theme"),document.body.classList.add("light-theme"),document.body.removeAttribute("data-color-scheme"),document.documentElement.style.colorScheme="light",!0)};
