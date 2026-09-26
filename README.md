@@ -77,19 +77,6 @@
 - **Rich Text Inject** - 富文本载体生成
 - **Style Craft** - 文本样式转换
 
-## AI功能配置
-
-AI辅助功能（Prompt Craft、Translate）需要后端API支持。
-
-如果你有对应的API服务，需要实现以下端点：
-
-- `POST /api/openai/chat` - OpenAI兼容聊天接口
-- `POST /api/anthropic/chat` - Anthropic兼容聊天接口
-- `GET /api/openai/models` - 获取可用OpenAI模型列表
-- `GET /api/anthropic/models` - 获取可用Anthropic模型列表
-
-静态部署时这些功能将显示静态部署不支持API调用提示。
-
 ## 浏览器兼容性
 
 建议使用现代浏览器：
