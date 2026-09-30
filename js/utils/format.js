@@ -1,0 +1,1 @@
+!function(){const o={formatBytes:function formatBytes(o){const t=Math.max(0,Number(o)||0);return t<1024?`${t} B`:t<1048576?`${(t/1024).toFixed(1)} KB`:`${(t/1048576).toFixed(2)} MB`}};(typeof window!=="undefined"?window:globalThis).FormatUtils=o,"undefined"!=typeof module&&module.exports&&(module.exports=o)}();
