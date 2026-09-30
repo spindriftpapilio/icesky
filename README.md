@@ -85,4 +85,4 @@
 
 ## Star 趋势
 
-[![Star History Chart](https://api.star-history.com/svg?repos=spindriftpapilio/icesky&type=Date)](https://star-history.com/#spindriftpapilio/icesky&Date)
+[![Stargazers over time](https://starchart.cc/spindriftpapilio/icesky.svg)](https://starchart.cc/spindriftpapilio/icesky)
