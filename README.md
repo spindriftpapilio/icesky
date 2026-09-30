@@ -29,8 +29,6 @@
 - AWS S3 + CloudFront
 - 任何支持静态文件的Web服务器
 
-**注意：** AI辅助功能（翻译、提示词变体生成）依赖 `/api/` 路由。静态托管时这些功能将不可用，除非配置额外的API后端。
-
 ## 项目结构
 
 ```
@@ -77,16 +75,6 @@
 - **Rich Text Inject** - 富文本载体生成
 - **Style Craft** - 文本样式转换
 
-## 浏览器兼容性
-
-建议使用现代浏览器：
-
-- Chrome/Edge 90+
-- Firefox 88+
-- Safari 14+
-
-部分功能（如DOCX生成、PDF编辑）依赖较新的Web API。
-
 ## 交流群
 
 ![IceSky交流群二维码](group.jpg)
@@ -94,3 +82,7 @@
 ## 免责声明
 
 本工具仅供安全研究与教育用途。使用者应遵守相关法律法规和道德规范，对使用本工具产生的一切后果自行负责。
+
+## Star 趋势
+
+[![Star History Chart](https://api.star-history.com/svg?repos=spindriftpapilio/icesky&type=Date)](https://star-history.com/#spindriftpapilio/icesky&Date)
