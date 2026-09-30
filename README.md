@@ -83,6 +83,6 @@
 
 本工具仅供安全研究与教育用途。使用者应遵守相关法律法规和道德规范，对使用本工具产生的一切后果自行负责。
 
-## Star 趋势
+## star趋势
 
-[![Stargazers over time](https://starchart.cc/spindriftpapilio/icesky.svg)](https://starchart.cc/spindriftpapilio/icesky)
+[![Star History Chart](https://api.star-history.com/svg?repos=spindriftpapilio/icesky&type=Date)](https://star-history.com/#spindriftpapilio/icesky&Date)
