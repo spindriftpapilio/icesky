@@ -77,7 +77,7 @@
 
 ## 交流群
 
-![IceSky交流群二维码](group.jpg)
+![IceSky交流群二维码](group.png)
 
 ## 免责声明
 
