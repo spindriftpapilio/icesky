@@ -1,30 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">冰蝴蝶</title>
+  <desc id="desc">由冰晶翅翼组成的蝴蝶图案</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08131c"/>
-      <stop offset="100%" stop-color="#10202d"/>
+    <linearGradient id="wing" x1="15" y1="8" x2="81" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8fbff"/>
+      <stop offset=".46" stop-color="#8cdbf5"/>
+      <stop offset="1" stop-color="#6c8de9"/>
     </linearGradient>
-    <linearGradient id="cubeTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#eefbff"/>
-      <stop offset="100%" stop-color="#b9ecff"/>
+    <linearGradient id="wing2" x1="18" y1="23" x2="77" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#9db6ff" stop-opacity=".7"/>
     </linearGradient>
-    <linearGradient id="cubeLeft" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#9ddfff"/>
-      <stop offset="100%" stop-color="#67bff5"/>
+    <linearGradient id="body" x1="44" y1="25" x2="53" y2="75" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eefcff"/>
+      <stop offset="1" stop-color="#6295dc"/>
     </linearGradient>
-    <linearGradient id="cubeRight" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#d8f6ff"/>
-      <stop offset="100%" stop-color="#89cff8"/>
-    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="#7ad6ff" stroke-opacity=".35"/>
-  <circle cx="22" cy="17" r="8" fill="#ffffff" fill-opacity=".22"/>
-  <polygon points="32,12 48,22 32,32 16,22" fill="url(#cubeTop)"/>
-  <polygon points="16,22 32,32 32,50 16,40" fill="url(#cubeLeft)"/>
-  <polygon points="48,22 32,32 32,50 48,40" fill="url(#cubeRight)"/>
-  <polyline points="32,12 48,22 48,40 32,50 16,40 16,22 32,12" fill="none" stroke="#dff7ff" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="32" y1="12" x2="32" y2="50" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
-  <line x1="16" y1="22" x2="32" y2="32" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
-  <line x1="48" y1="22" x2="32" y2="32" stroke="#dff7ff" stroke-width="2" stroke-linecap="round"/>
+  <rect width="96" height="96" rx="24" fill="#0b1b32"/>
+  <path d="M47 42C35 19 13 13 10 24c-3 12 12 25 30 29-19-2-31 6-25 17 6 11 23 4 31-9z" fill="url(#wing)" stroke="#dffbff" stroke-width="2"/>
+  <path d="M49 42C61 19 83 13 86 24c3 12-12 25-30 29 19-2 31 6 25 17-6 11-23 4-31-9z" fill="url(#wing)" stroke="#dffbff" stroke-width="2"/>
+  <path d="M43 48 18 27M42 55 20 63M53 48 78 27M54 55 76 63" stroke="url(#wing2)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48 29c-5 13-5 32 0 43 2 5 5 5 7 0 5-11 5-30 0-43-2-5-5-5-7 0z" fill="url(#body)" stroke="#ecffff" stroke-width="1.5" filter="url(#glow)"/>
+  <circle cx="49" cy="27" r="4" fill="#f5ffff" stroke="#8fdaf5" stroke-width="1.5"/>
+  <path d="M47 25 39 18M53 25 61 18" fill="none" stroke="#d7f8ff" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="39" cy="18" r="1.5" fill="#d7f8ff"/><circle cx="61" cy="18" r="1.5" fill="#d7f8ff"/>
 </svg>
