@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="favicon.svg" width="80" height="80" alt="IceSky butterfly">
+  <img src="assets/icesky-butterfly.svg" width="160" height="160" alt="IceSky butterfly with translucent blue and lilac wings in drifting snow">
   <h1>IceSky</h1>
   <p>A browser-based toolkit for multimodal prompt injection testing.</p>
   <p>

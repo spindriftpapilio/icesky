@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="favicon.svg" width="80" height="80" alt="IceSky butterfly">
+  <img src="assets/icesky-butterfly.svg" width="160" height="160" alt="飞雪蝶影，冰蓝与淡紫蝶翼间飘落细雪">
   <h1>冰霄 IceSky</h1>
   <p>面向AI安全测试的多模态提示词注入工具</p>
   <p>
