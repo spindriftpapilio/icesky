@@ -1,31 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
-  <title id="title">冰蝴蝶</title>
-  <desc id="desc">由冰晶翅翼组成的蝴蝶图案</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">IceSky — Snowfall and butterfly shadows</title>
+  <desc id="desc">A translucent ice-blue and lilac butterfly in flight, with delicate wing veins, drifting snow and a soft trailing silhouette on a transparent background.</desc>
   <defs>
-    <linearGradient id="wing" x1="15" y1="8" x2="81" y2="88" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e8fbff"/>
-      <stop offset=".46" stop-color="#8cdbf5"/>
-      <stop offset="1" stop-color="#6c8de9"/>
+    <linearGradient id="upper" x1="50" y1="45" x2="164" y2="151" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ecfdff"/>
+      <stop offset=".36" stop-color="#a3e4f2" stop-opacity=".94"/>
+      <stop offset=".72" stop-color="#91b5ec" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#b69adf" stop-opacity=".8"/>
     </linearGradient>
-    <linearGradient id="wing2" x1="18" y1="23" x2="77" y2="75" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff" stop-opacity=".95"/>
-      <stop offset="1" stop-color="#9db6ff" stop-opacity=".7"/>
+    <linearGradient id="lower" x1="78" y1="130" x2="165" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b9e8f7" stop-opacity=".9"/>
+      <stop offset=".55" stop-color="#c4b3ee" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ecdef9" stop-opacity=".6"/>
     </linearGradient>
-    <linearGradient id="body" x1="44" y1="25" x2="53" y2="75" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#eefcff"/>
-      <stop offset="1" stop-color="#6295dc"/>
+    <linearGradient id="edge" x1="51" y1="48" x2="173" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9dcfe5"/>
+      <stop offset=".5" stop-color="#719ad5"/>
+      <stop offset="1" stop-color="#b296d9"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <radialGradient id="halo">
+      <stop stop-color="#bbdcf8" stop-opacity=".25"/>
+      <stop offset=".65" stop-color="#cbb6ee" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#cbb6ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="haze" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3"/>
     </filter>
+    <path id="left-upper" d="M119 122C102 91 69 48 43 43C38 72 48 107 69 119C83 127 102 126 119 132Z"/>
+    <path id="right-upper" d="M124 119C135 86 164 44 194 36C199 63 189 100 170 115C156 126 140 126 124 132Z"/>
+    <path id="left-lower" d="M117 132C96 125 75 128 64 141C52 156 66 178 82 178C93 178 100 167 106 157C106 173 99 184 96 192C113 181 120 158 120 138Z"/>
+    <path id="right-lower" d="M127 132C150 125 170 128 180 142C190 157 178 174 163 176C151 177 144 165 138 156C139 172 147 182 150 189C133 180 126 158 124 139Z"/>
+    <g id="wings">
+      <use href="#left-upper"/>
+      <use href="#right-upper"/>
+      <use href="#left-lower"/>
+      <use href="#right-lower"/>
+    </g>
+    <g id="snow" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+      <path d="M0-5V5M-4.3-2.5 4.3 2.5M-4.3 2.5 4.3-2.5"/>
+    </g>
   </defs>
-  <rect width="96" height="96" rx="24" fill="#0b1b32"/>
-  <path d="M47 42C35 19 13 13 10 24c-3 12 12 25 30 29-19-2-31 6-25 17 6 11 23 4 31-9z" fill="url(#wing)" stroke="#dffbff" stroke-width="2"/>
-  <path d="M49 42C61 19 83 13 86 24c3 12-12 25-30 29 19-2 31 6 25 17-6 11-23 4-31-9z" fill="url(#wing)" stroke="#dffbff" stroke-width="2"/>
-  <path d="M43 48 18 27M42 55 20 63M53 48 78 27M54 55 76 63" stroke="url(#wing2)" stroke-width="2" stroke-linecap="round"/>
-  <path d="M48 29c-5 13-5 32 0 43 2 5 5 5 7 0 5-11 5-30 0-43-2-5-5-5-7 0z" fill="url(#body)" stroke="#ecffff" stroke-width="1.5" filter="url(#glow)"/>
-  <circle cx="49" cy="27" r="4" fill="#f5ffff" stroke="#8fdaf5" stroke-width="1.5"/>
-  <path d="M47 25 39 18M53 25 61 18" fill="none" stroke="#d7f8ff" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="39" cy="18" r="1.5" fill="#d7f8ff"/><circle cx="61" cy="18" r="1.5" fill="#d7f8ff"/>
+  <ellipse cx="120" cy="122" rx="108" ry="105" fill="url(#halo)"/>
+  <use href="#wings" fill="#a994d3" opacity=".13" transform="translate(-9 22) rotate(-12 120 120)" filter="url(#haze)"/>
+  <g transform="rotate(9 120 120)">
+    <g stroke="url(#edge)" stroke-width=".85" stroke-linejoin="round">
+      <use href="#left-upper" fill="url(#upper)"/>
+      <use href="#right-upper" fill="url(#upper)"/>
+      <use href="#left-lower" fill="url(#lower)"/>
+      <use href="#right-lower" fill="url(#lower)"/>
+    </g>
+    <g stroke="#f2fcff" stroke-width=".9" stroke-linecap="round" opacity=".85">
+      <path d="M117 125C94 102 67 77 47 49M117 125C90 118 67 108 54 86M96 105C80 101 65 94 54 86M83 90C70 78 62 65 59 51"/>
+      <path d="M127 123C148 96 174 65 190 42M127 123C155 116 176 100 187 76M148 98C166 93 178 85 187 76M162 81C175 66 180 54 180 43"/>
+      <path d="M115 136C92 140 78 154 73 169M113 140C103 155 98 165 84 173M131 136C153 140 166 152 171 166M133 141C145 158 150 168 161 171"/>
+    </g>
+    <g fill="#f5fdff" opacity=".9">
+      <circle cx="55" cy="65" r="1.8"/><circle cx="62" cy="81" r="1.3"/><circle cx="71" cy="97" r="1"/>
+      <circle cx="182" cy="57" r="1.8"/><circle cx="178" cy="73" r="1.3"/><circle cx="167" cy="93" r="1"/>
+      <circle cx="77" cy="151" r="1.5"/><circle cx="89" cy="144" r="1"/>
+      <circle cx="166" cy="150" r="1.5"/><circle cx="153" cy="143" r="1"/>
+    </g>
+    <path d="M121 110C118 122 118 141 122 156C126 142 127 123 124 110Z" fill="#7798ce"/>
+    <path d="M122 114C121 125 121 139 122 148" stroke="#e7f6ff" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="122.5" cy="107" r="3.2" fill="#92b8df"/>
+    <path d="M121 105C117 96 111 93 108 94M124 104C128 95 132 92 136 91" stroke="#8ea8d3" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <g color="#a6cde6">
+    <use href="#snow" transform="translate(71 29) rotate(12)"/>
+    <use href="#snow" transform="translate(208 112) rotate(22) scale(.8)"/>
+    <use href="#snow" transform="translate(41 164) rotate(-10) scale(.7)"/>
+    <use href="#snow" transform="translate(159 209) rotate(18) scale(.65)"/>
+  </g>
+  <g fill="#a7cce4">
+    <circle cx="133" cy="23" r="1.5"/><circle cx="204" cy="65" r="1.8"/>
+    <circle cx="28" cy="104" r="1.5"/><circle cx="188" cy="182" r="1.4"/>
+    <circle cx="67" cy="201" r="1.7"/><circle cx="111" cy="216" r="1"/>
+  </g>
+  <g fill="#c2b0e3" opacity=".75">
+    <circle cx="39" cy="126" r="1"/><circle cx="192" cy="146" r="1"/>
+    <circle cx="88" cy="218" r="1.2"/><circle cx="54" cy="184" r=".9"/>
+  </g>
 </svg>
