@@ -1,6 +1,6 @@
 # IceSky
 
-[简体中文](README.md) · English · [English user guide](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide)
+[简体中文](README.zh-CN.md) · English · [English user guide](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide)
 
 IceSky is a browser-based prompt injection toolkit for AI security testing. Edit test payloads, transform and encode text, embed hidden content, arrange multi-turn conversations, and generate document, image, audio, email, web, MCP, and Agent-rule samples.
 
