@@ -1,5 +1,7 @@
 # 冰霄IceSky
 
+简体中文 · [English](README.en.md)
+
 面向AI安全测试的提示词注入工具。在浏览器中编辑测试载荷，进行文本变换、隐写与多轮对话编排，生成文档、图像、音频、邮件、网页、MCP定义和Agent规则文件等测试样本。
 
 完整操作说明见[Wiki使用手册](https://github.com/spindriftpapilio/icesky/wiki)。使用前请阅读下方的[法律免责声明与使用合规须知](#法律免责声明与使用合规须知)。
