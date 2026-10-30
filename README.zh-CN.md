@@ -1,6 +1,23 @@
-# 冰霄IceSky
-
-简体中文 · [English](README.md)
+<div align="center">
+  <img src="favicon.svg" width="80" height="80" alt="IceSky butterfly">
+  <h1>冰霄 IceSky</h1>
+  <p>面向AI安全测试的多模态提示词注入工具</p>
+  <p>
+    <a href="README.md">English</a>&nbsp;&nbsp;&nbsp;
+    <a href="README.zh-CN.md">简体中文</a>
+  </p>
+  <p>
+    <a href="https://github.com/spindriftpapilio/icesky/wiki"><img src="https://img.shields.io/badge/Wiki-使用手册-315b8a?style=flat-square" alt="使用手册"></a>
+    <a href="https://github.com/spindriftpapilio/icesky/issues"><img src="https://img.shields.io/github/issues/spindriftpapilio/icesky?style=flat-square&amp;color=315b8a" alt="GitHub issues"></a>
+    <a href="https://github.com/spindriftpapilio/icesky/stargazers"><img src="https://img.shields.io/github/stars/spindriftpapilio/icesky?style=flat-square&amp;color=315b8a" alt="GitHub stars"></a>
+  </p>
+  <p>
+    <a href="#快速开始">快速开始</a>&nbsp;&nbsp;&nbsp;
+    <a href="#功能与使用手册">功能与文档</a>&nbsp;&nbsp;&nbsp;
+    <a href="#部署">部署</a>&nbsp;&nbsp;&nbsp;
+    <a href="#交流群">交流</a>
+  </p>
+</div>
 
 面向AI安全测试的提示词注入工具。在浏览器中编辑测试载荷，进行文本变换、隐写与多轮对话编排，生成文档、图像、音频、邮件、网页、MCP定义和Agent规则文件等测试样本。
 
@@ -8,7 +25,9 @@
 
 ## 界面预览
 
-![IceSky工作台与Base64转换结果](ui.png)
+<p align="center">
+  <a href="ui.png"><img src="ui.png" width="100%" alt="IceSky工作台与Base64转换结果"></a>
+</p>
 
 ## 快速开始
 
@@ -24,9 +43,15 @@ python3 -m http.server 8080
 
 ## 功能与使用手册
 
+### 文本与对话
+
 文本处理支持[编码变换与解码](https://github.com/spindriftpapilio/icesky/wiki#文本变换与解码)、[输入扰动](https://github.com/spindriftpapilio/icesky/wiki#输入扰动与结果比较)、[隐藏文本与字符映射](https://github.com/spindriftpapilio/icesky/wiki#隐藏文本emoji与字符映射)。测试流程可从[提示词生成](https://github.com/spindriftpapilio/icesky/wiki#生成提示词测试样本)开始，配合[多轮对话编排](https://github.com/spindriftpapilio/icesky/wiki#多轮对话编排)、[样本构造与批量导出](https://github.com/spindriftpapilio/icesky/wiki#样本构造与批量导出)，并[保存实验记录](https://github.com/spindriftpapilio/icesky/wiki#保存实验记录)。
 
+### 多模态文件
+
 文件工具涵盖[图像与二维码](https://github.com/spindriftpapilio/icesky/wiki#图像生成与二维码)、[PDF](https://github.com/spindriftpapilio/icesky/wiki#pdf构造与文本对比)、[Office文档](https://github.com/spindriftpapilio/icesky/wiki#word表格与幻灯片)、[音频与字幕](https://github.com/spindriftpapilio/icesky/wiki#音频与字幕)、[网页与邮件](https://github.com/spindriftpapilio/icesky/wiki#网页富文本与邮件)，以及[MCP定义与Agent配置](https://github.com/spindriftpapilio/icesky/wiki#mcp定义与agent配置)。具体写入通道、参数和导出方法见对应章节。
+
+### 工作台与结果
 
 工具搜索、常用工具和快捷键见[工作台操作](https://github.com/spindriftpapilio/icesky/wiki#认识工作台)。分析与参考功能见[Token分析与其他工具](https://github.com/spindriftpapilio/icesky/wiki#token分析与其他工具)，结果更新、模型连接及文件解析问题见[常见问题](https://github.com/spindriftpapilio/icesky/wiki#结果保存与常见问题)。
 
@@ -36,9 +61,15 @@ python3 -m http.server 8080
 
 ## 交流群
 
-![IceSky交流群二维码](https://raw.githubusercontent.com/spindriftpapilio/icesky/main/group.png)
+<p align="center">
+  <img src="group.png" width="240" alt="IceSky交流群二维码">
+</p>
 
 ## 法律免责声明与使用合规须知
+
+<details>
+<summary>查看完整使用条款</summary>
+
 
 ### 1. 工具定位
 
@@ -86,6 +117,8 @@ python3 -m http.server 8080
 请在使用前阅读上述条款，并自行确认测试活动已获授权且符合法律要求。如无法确认授权或合规性，请勿对目标系统开展测试。
 
 本工具严禁非法滥用。任何违法使用行为所产生的法律责任均由行为人自行承担，与项目开发、维护和贡献团队无关。
+
+</details>
 
 ## Star趋势
 

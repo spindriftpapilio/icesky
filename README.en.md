@@ -1,6 +1,23 @@
-# IceSky
-
-[简体中文](README.zh-CN.md) · English · [English user guide](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide)
+<div align="center">
+  <img src="favicon.svg" width="80" height="80" alt="IceSky butterfly">
+  <h1>IceSky</h1>
+  <p>A browser-based toolkit for multimodal prompt injection testing.</p>
+  <p>
+    <a href="README.md">English</a>&nbsp;&nbsp;&nbsp;
+    <a href="README.zh-CN.md">简体中文</a>
+  </p>
+  <p>
+    <a href="https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide"><img src="https://img.shields.io/badge/Wiki-User_Guide-315b8a?style=flat-square" alt="User guide"></a>
+    <a href="https://github.com/spindriftpapilio/icesky/issues"><img src="https://img.shields.io/github/issues/spindriftpapilio/icesky?style=flat-square&amp;color=315b8a" alt="GitHub issues"></a>
+    <a href="https://github.com/spindriftpapilio/icesky/stargazers"><img src="https://img.shields.io/github/stars/spindriftpapilio/icesky?style=flat-square&amp;color=315b8a" alt="GitHub stars"></a>
+  </p>
+  <p>
+    <a href="#quick-start">Quick start</a>&nbsp;&nbsp;&nbsp;
+    <a href="#features-and-documentation">Features</a>&nbsp;&nbsp;&nbsp;
+    <a href="#deployment">Deployment</a>&nbsp;&nbsp;&nbsp;
+    <a href="#community">Community</a>
+  </p>
+</div>
 
 IceSky is a browser-based prompt injection toolkit for AI security testing. Edit test payloads, transform and encode text, embed hidden content, arrange multi-turn conversations, and generate document, image, audio, email, web, MCP, and Agent-rule samples.
 
@@ -8,7 +25,9 @@ For complete instructions, see the [English Wiki](https://github.com/spindriftpa
 
 ## Interface preview
 
-![IceSky English workspace with a Base64 conversion](https://raw.githubusercontent.com/wiki/spindriftpapilio/icesky/images/manual-en/01-workbench.png)
+<p align="center">
+  <a href="https://raw.githubusercontent.com/wiki/spindriftpapilio/icesky/images/manual-en/01-workbench.png"><img src="https://raw.githubusercontent.com/wiki/spindriftpapilio/icesky/images/manual-en/01-workbench.png" width="100%" alt="IceSky English workspace with a Base64 conversion"></a>
+</p>
 
 ## Quick start
 
@@ -24,13 +43,24 @@ Open <http://localhost:8080> in your browser. Click **EN** in the top-right head
 
 Text transformations, steganography, and local sample generation work without a model connection. AI rewriting and translation require [model API configuration](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#model-apis-ai-rewriting-and-translation).
 
+<details>
+<summary>Language switching and built-in examples</summary>
+
 Built-in examples and untouched default fields follow the interface language. Edited input and uploaded content are preserved. For unchanged built-in file samples with a current result, language switching also refreshes the preview and downloadable artifact. The injection generator has its own template-language selector. Original reference material and Chinese-specific writing features retain their intended language.
+
+</details>
 
 ## Features and documentation
 
+### Text and conversations
+
 Text tools cover [transformations and decoding](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#text-transformations-and-decoding), [mutation and comparison](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#input-mutation-and-comparison), and [hidden text, emoji, and character mapping](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#hidden-text-emoji-and-character-mapping). Start with the [prompt injection generator](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#generating-prompt-injection-samples), arrange [multi-turn dialogues](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#multi-turn-dialogue), build [individual or batch samples](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#sample-builder-and-batch-export), and save [experiment notes](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#saving-experiment-notes).
 
+### Multimodal files
+
 File tools support [images and QR codes](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#images-and-qr-codes), [PDFs](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#pdf-generation-and-text-comparison), [Word documents, spreadsheets, and slides](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#word-spreadsheets-and-slides), [audio and subtitles](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#audio-and-subtitles), [web pages, rich text, and email](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#web-pages-rich-text-and-email), and [MCP definitions and Agent configurations](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#mcp-definitions-and-agent-configurations).
+
+### Workspace and results
 
 See [workspace navigation](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#the-workspace) for search, pinned tools, and keyboard shortcuts. Additional utilities are covered under [token analysis and other tools](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#token-analysis-and-other-tools). For stale results, API connections, and extraction differences, see [troubleshooting](https://github.com/spindriftpapilio/icesky/wiki/English-User-Guide#saving-results-and-troubleshooting).
 
@@ -42,9 +72,15 @@ The public repository contains the built release. Serve its root directory direc
 
 ## Community
 
-![IceSky community group QR code](https://raw.githubusercontent.com/spindriftpapilio/icesky/main/group.png)
+<p align="center">
+  <img src="group.png" width="240" alt="IceSky community group QR code">
+</p>
 
 ## Legal notice and authorized-use requirements
+
+<details>
+<summary>Read the full terms of use</summary>
+
 
 ### Purpose
 
@@ -77,6 +113,8 @@ Understand the laws that apply to your location, the target system, and the test
 Maintainers may decline assistance for unlawful or abusive use and may adjust distribution or maintenance arrangements where law and licensing permit. Evidence of misuse received through reports or public sources may be retained and reported as legally appropriate. These provisions do not describe remote monitoring or a mechanism to revoke downloaded copies.
 
 Read these terms and confirm authorization before testing. Illegal misuse is prohibited, and responsibility for illegal activity rests with the person carrying it out.
+
+</details>
 
 ## Star history
 
